@@ -23,7 +23,7 @@ return [
     |
     */
 
-    'subject' => 'Welcome to UNIT3D',
+    'subject' => 'Bienvenido a F1CARRERAS // Welcome to F1CARRERAS',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     |
     */
 
-    'message' => 'Welcome To [b]UNIT3D[/b].
-
-    - UNIT3D :space_invader:',
+    'message' => 'Bienvenido a [b]F1CARRERAS[/b] // Welcome To [b]F1CARRERAS[/b].
+     Favor de leer las Reglas y Preguntas Frecuentes // Please read Rules and FAQ.
+    - F1Carreras :space_invader:',
 ];
