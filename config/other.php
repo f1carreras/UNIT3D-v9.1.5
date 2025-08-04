@@ -23,7 +23,7 @@ return [
     |
     */
 
-    'title' => 'UNIT3D',
+    'title' => 'F1CARRERAS',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     |
     */
 
-    'subTitle' => 'Built On Laravel',
+    'subTitle' => 'Carreras en 4K/HD con Multiaudio',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     |
     */
 
-    'meta_description' => 'Built On Laravel',
+    'meta_description' => 'Carreras en 4K/HD con Multiaudio',
 
     /*
     |--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ return [
     | Date Site Was Born
     |
     */
-    'birthdate' => 'December 30th 2017',
+    'birthdate' => 'March 15th 2024',
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'ratio' => 0.4,
+    'ratio' => 0.01,
 
     /*
     |--------------------------------------------------------------------------
@@ -123,9 +123,9 @@ return [
     | Exempt these groups from the invite restrictions
     */
     'invite-only'   => true,
-    'invite_expire' => 14,
+    'invite_expire' => 7,
 
-    'invites_restriced' => false,
+    'invites_restriced' => true,
     'invite_groups'     => [
         'Administrator',
         'Owner',
@@ -163,7 +163,7 @@ return [
     | 11 = Revel
     | 12 = Material Design v3 Light
     */
-    'default_style' => 12,
+    'default_style' => 1,
 
     /*
     |--------------------------------------------------------------------------
