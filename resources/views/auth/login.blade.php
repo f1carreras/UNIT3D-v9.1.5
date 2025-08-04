@@ -122,6 +122,11 @@
                     <a class="auth-form__footer-item" href="{{ route('password.request') }}">
                         {{ __('auth.lost-password') }}
                     </a>
+                     <div class="discord-div" style="align-self: center;">
+                    <a class="discord-widget" href="https://discord.gg/vHYybyRc8h" title="Join us on Discord">
+                        <img src="https://discordapp.com/api/guilds/1219287190601990175/embed.png?style=banner3">
+                    </a>
+                </div>
                 </footer>
             </section>
         </main>
