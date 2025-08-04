@@ -1,7 +1,7 @@
 <nav class="top-nav" x-data="{ expanded: false }" x-bind:class="expanded && 'mobile'">
     <div class="top-nav__left">
         <a class="top-nav__branding" href="{{ route('home.index') }}">
-            <img src="{{ url('/favicon.ico') }}" style="height: 35px" />
+            <img src="{{ url('/missing-image.png') }}" style="height: 35px" />
             <span class="top-nav__site-logo">{{ \config('other.title') }}</span>
         </a>
         @include('partials.quick-search-dropdown')
@@ -211,7 +211,7 @@
                             class="{{ $donationPercentage < 100 ? 'fa-fade' : '' }}"
                             style="color: lightcoral"
                         >
-                            Donate
+                            Apoya A F1Carreras
                         </span>
                         <div class="progress" style="background-color: slategray">
                             <div
@@ -237,11 +237,11 @@
                             Support {{ config('other.title') }} ({{ $donationPercentage }}%)
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="https://square.link/u/VjB1CNfm" target="_blank">
                             <i class="fas fa-handshake"></i>
                             Support UNIT3D
-                        </a>
+                        </a>-->
                     </li>
                 </ul>
             </li>
