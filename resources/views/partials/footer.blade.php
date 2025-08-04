@@ -2,7 +2,7 @@
     <div class="footer__wrapper">
         <section class="footer__section">
             <h2 class="footer__section-title">
-                <img src="{{ url('/favicon.ico') }}" style="height: 30px; vertical-align: sub" />
+                <img src="{{ url('/missing-image.png') }}" style="height: 30px; vertical-align: sub" />
                 <span class="top-nav__site-logo">{{ \config('other.title') }}</span>
             </h2>
             <p>{{ config('other.meta_description') }}</p>
@@ -79,13 +79,13 @@
                 <li>
                     <a href="{{ route('about') }}">{{ __('common.about') }}</a>
                 </li>
-                <li>
+                <!--<li>
                     <a
                         href="https://github.com/HDInnovations/UNIT3D-Community-Edition/wiki/Torrent-API-(UNIT3D-v8.x.x)"
                     >
                         API Documentation
                     </a>
-                </li>
+                </li>-->
             </ul>
         </section>
     </div>
@@ -256,12 +256,12 @@
             Site and design &copy;
             {{ date('Y', strtotime(config('other.birthdate'))) }}-{{ date('Y') }}
             {{ config('other.title') }} |
-            <a href="https://github.com/HDInnovations/UNIT3D-Community-Edition">
+            <!--<a href="https://github.com/HDInnovations/UNIT3D-Community-Edition">-->
                 UNIT3D {{ config('unit3d.version') }}
             </a>
             @if (config('announce.external_tracker.is_enabled'))
                 +
-                <a href="https://github.com/HDInnovations/UNIT3D-Announce">UNIT3D-Announce</a>
+                <!--<a href="https://github.com/HDInnovations/UNIT3D-Announce">UNIT3D-Announce</a>-->
             @endif
         </p>
     </div>
