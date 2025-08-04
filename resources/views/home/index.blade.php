@@ -39,11 +39,11 @@
 
                 @break
             @case('latest_posts')
-           {{-- @include('blocks.latest-posts') --}}
+                @include('blocks.latest-posts')
 
                 @break
             @case('latest_comments')
-                @include('blocks.latest-comments')
+           {{-- @include('blocks.latest-comments') --}}
 
                 @break
             @case('online')
