@@ -35,7 +35,7 @@
 
                 @break
             @case('latest_topics')
-                @include('blocks.latest-topics')
+           {{-- @include('blocks.latest-topics') --}}
 
                 @break
             @case('latest_posts')
