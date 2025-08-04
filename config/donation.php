@@ -23,7 +23,7 @@ return [
     |
     */
     'is_enabled'   => true,
-    'monthly_goal' => 100,
+    'monthly_goal' => 30,
     'currency'     => 'USD',
-    'description'  => 'Help keep the site alive by donating to our monthly goal.',
+    'description'  => 'F1Carreras te invita a convertirte en un miembro VIP para ayudar con los costos de tracker y así poder seguir brindandote el mejor contenido. Esto te dará acceso a más privilegios, comodidades y formar parte importante de esta comunidad. Gracias por tu apoyo.',
 ];
