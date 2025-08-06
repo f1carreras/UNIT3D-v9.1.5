@@ -129,6 +129,7 @@ return [
     'invite_groups'     => [
         'Administrator',
         'Owner',
+        'SuperUser',
         'ExtremeUser',
         'InsaneUser',
         'Veteran',
