@@ -19,7 +19,7 @@
 
                 @break
             @case('random_media')
-           {{-- @livewire('random-media') --}}
+                @livewire('random-media')
 
                 @break
             @case('poll')
