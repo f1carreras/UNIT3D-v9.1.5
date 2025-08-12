@@ -152,6 +152,11 @@ body::before {
     color: #a71641;
     font-weight: bold;
     width: 100%;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 }
 
 .auth-form__text-input-group,
@@ -257,6 +262,11 @@ body::before {
     text-transform: uppercase;
     letter-spacing: 0ch;
     line-height: 1;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 }
 
 .auth-form__errors {
