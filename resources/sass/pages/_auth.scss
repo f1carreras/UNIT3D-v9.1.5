@@ -1,8 +1,7 @@
 body {
-    height: 100vh;
-    overflow-y: auto;
-    background: #181529 url('/img/pista.jpg') no-repeat center center;
-    background-size: cover;
+    min-height: 100vh; /* altura mínima siempre igual a la pantalla */
+    background: #181529 url('/img/pista.jpg') no-repeat center center fixed;
+    background-size: cover; /* siempre cubre todo */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol';
