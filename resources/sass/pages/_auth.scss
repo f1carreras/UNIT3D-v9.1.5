@@ -10,14 +10,13 @@ body {
 }
 
 .auth-form {
-    background-image: linear-gradient(45deg, #8177bb, #756ab4);
-    opacity: 0.75;
+    background: transparent; /* Sin color ni degradado */
     width: min(100vw - 20px, 400px);
     margin: 60px auto;
     border-radius: 22px;
     box-shadow:
         0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
+        0 10px 10px rgba(0, 0, 0, 0.22); /* Mantiene la separación del fondo */
 }
 
 .auth-form__form {
