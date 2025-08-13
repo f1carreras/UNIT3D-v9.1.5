@@ -238,6 +238,13 @@ body {
     margin: 0 auto; /* centra horizontalmente */
 }
 
+@media (max-width: 600px) {
+    .auth-form__site-logo {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 .auth-form__errors {
     list-style-type: none;
     margin: 0;
