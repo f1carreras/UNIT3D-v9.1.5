@@ -8,27 +8,12 @@ body {
     position: relative;
 }
 
-/* Capa oscura + difuminado */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(0.2px); /* Difuminado */
-    -webkit-backdrop-filter: blur(0.2px); /* Compatibilidad Safari */
-    z-index: -1;
-}
-
 .auth-form {
-    background: transparent; /* Sin color ni degradado */
+    background: transparent;
     width: min(100vw - 20px, 400px);
     margin: 60px auto;
     border-radius: 22px;
-    box-shadow:
-        0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22); /* Mantiene la separación del fondo */
+    box-shadow: none;
 }
 
 .auth-form__form {
