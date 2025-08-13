@@ -235,20 +235,33 @@ body {
 }
 
 .auth-form__site-logo {
-    color: #a71641;
     font-weight: 900;
     font-size: 4.9rem;
     font-family:
-        Helvetica Neue,
+        'Helvetica Neue',
         Helvetica,
         Arial,
         sans-serif;
     text-transform: uppercase;
     letter-spacing: 0ch;
     line-height: 1;
+
+    /* Gradiente dorado */
+    background: linear-gradient(
+        45deg,
+        #f9d423,
+        #ff4e50,
+        #f9d423
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Sombra para resaltar */
     text-shadow:
-        0 0 4px rgba(0, 0, 0, 0.8),
-        0 0 8px rgba(0, 0, 0, 0.6);
+        0 0 6px rgba(255, 215, 0, 0.8), /* brillo dorado */
+        0 0 12px rgba(255, 215, 0, 0.6),
+        0 0 18px rgba(255, 215, 0, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.6); /* sombra oscura para contraste */
 }
 
 .auth-form__errors {
