@@ -1,19 +1,22 @@
 body {
-    min-height: 100vh; /* altura mínima siempre igual a la pantalla */
-    background: #181529 url('/img/pista.jpg') no-repeat center center fixed;
-    background-size: cover; /* siempre cubre todo */
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #181529;
+    background-image: url(/public/img/pipes/silver.png);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
         Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol';
-    position: relative;
 }
 
 .auth-form {
-    background: transparent;
+    background-image: linear-gradient(45deg, #8177bb, #756ab4);
+    opacity: 0.75;
     width: min(100vw - 20px, 400px);
     margin: 60px auto;
     border-radius: 22px;
-    box-shadow: none;
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .auth-form__form {
@@ -133,14 +136,9 @@ body {
 .auth-form__label {
     margin-left: 14px;
     font-size: 16px;
-    color: #a71641;
+    color: #11001c;
     font-weight: bold;
     width: 100%;
-    text-shadow:
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
 }
 
 .auth-form__text-input-group,
@@ -235,14 +233,17 @@ body {
 }
 
 .auth-form__site-logo {
-    margin: 0 auto; /* centra horizontalmente */
-}
-
-@media (max-width: 600px) {
-    .auth-form__site-logo {
-        max-width: 100%;
-        height: auto;
-    }
+    color: #a71641;
+    font-weight: 900;
+    font-size: 2.9rem;
+    font-family:
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0ch;
+    line-height: 1;
 }
 
 .auth-form__errors {
