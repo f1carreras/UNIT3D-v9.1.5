@@ -32,7 +32,7 @@
                     @csrf
                     <a class="auth-form__branding" href="{{ route('home.index') }}">
                         <i class="fal fa-tv-retro"></i>
-                        <img src="{{ asset('img/F1C-Login2.png') }}" alt="Logo" class="auth-form__site-logo">
+                        <span class="auth-form__site-logo">{{ \config('other.title') }}</span>
                     </a>
                     @if (Session::has('warning') || Session::has('success') || Session::has('info'))
                         <ul class="auth-form__important-infos">
