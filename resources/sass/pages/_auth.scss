@@ -1,4 +1,4 @@
-body {
+.body {
     height: 100vh;
     overflow-y: auto;
     background-color: #181529;
@@ -233,18 +233,35 @@ body {
 }
 
 .auth-form__site-logo {
-    color: #a71641;
+    font-family: 'Orbitron', sans-serif; /* Fuente moderna */
     font-weight: 900;
     font-size: 2.9rem;
-    font-family:
-        Helvetica Neue,
-        Helvetica,
-        Arial,
-        sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0ch;
+    letter-spacing: 0;
     line-height: 1;
+    color: #ff3366;
+    background: linear-gradient(
+        90deg,
+        #ff3366,
+        #ffcc00,
+        #33ffcc,
+        #ff3366
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
 }
+
+/* Animación de brillo */
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
 
 .auth-form__errors {
     list-style-type: none;
