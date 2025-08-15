@@ -1,11 +1,9 @@
 body {
     height: 100vh;
     overflow-y: auto;
-    background-color: #181529;
-    background-image: url(/public/img/pipes/silver.png);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-        Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol';
+    background-color: #131313;
+    background-image: url(/public/img/pipes/red.png);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .auth-form {
