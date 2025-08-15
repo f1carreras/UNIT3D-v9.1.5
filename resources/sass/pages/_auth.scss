@@ -240,7 +240,7 @@ body {
     letter-spacing: 0ch;
     line-height: 1;
 
-    /* Efecto de brillo y cambio de color */
+    /* Degradado animado */
     background: linear-gradient(
         -45deg,
         #a71641,
@@ -251,22 +251,29 @@ body {
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: logoColorShift 6s ease infinite;
+    animation: logoColorShift 6s ease infinite, neonFlicker 1.5s infinite;
 
-    /* Brillo extra */
+    /* Sombra inicial */
     text-shadow: 0 0 8px rgba(255, 0, 0, 0.8),
-                 0 0 16px rgba(255, 0, 0, 0.6);
+                 0 0 16px rgba(255, 0, 0, 0.6),
+                 0 0 32px rgba(255, 0, 0, 0.4);
 }
 
 @keyframes logoColorShift {
-    0% {
-        background-position: 0% 50%;
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 8px rgba(255, 0, 0, 0.8),
+                     0 0 16px rgba(255, 0, 0, 0.6),
+                     0 0 32px rgba(255, 0, 0, 0.4),
+                     0 0 64px rgba(255, 0, 0, 0.2);
     }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+    20%, 24%, 55% {
+        text-shadow: none;
     }
 }
 
