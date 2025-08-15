@@ -2,10 +2,10 @@
     <div class="footer__wrapper">
         <section class="footer__section">
             <h2 class="footer__section-title">
-                <img src="{{ url('/img/F1C-Login2.png') }}" style="height: 30px; vertical-align: sub" />
-                <span class="top-nav__site-logo">{{ \config('other.title') }}</span>
+                <!--<img src="{{ url('/missing-image.png') }}" style="height: 30px; vertical-align: sub" />-->
+                <!--<span class="top-nav__site-logo">{{ \config('other.title') }}</span>-->
             </h2>
-            <p>{{ config('other.meta_description') }}</p>
+            <!--<p>{{ config('other.meta_description') }}</p>-->
             <p class="footer__icons">
                 @if (! empty(config('unit3d.chat-link-url')))
                     <a href="{{ config('unit3d.chat-link-url') }}">
@@ -13,6 +13,7 @@
                         {{ config('unit3d.chat-link-name') ?: __('common.chat') }}
                     </a>
                 @endif
+                <img src="/img/F1C-Login2.png" alt="F1Carreras" class="footer__icon">
             </p>
         </section>
         <section class="footer__section">
