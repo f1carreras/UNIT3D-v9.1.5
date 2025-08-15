@@ -228,19 +228,18 @@ body {
     margin-bottom: 12px;
 }
 
+/* Importa la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 .auth-form__site-logo {
-    font-weight: 900;
+    font-family: 'Russo One', sans-serif; /* Fuente moderna y deportiva */
+    font-weight: 400; /* Russo One tiene un peso fijo, no necesita 900 */
     font-size: 2.9rem;
-    font-family:
-        Helvetica Neue,
-        Helvetica,
-        Arial,
-        sans-serif;
     text-transform: uppercase;
     letter-spacing: 0ch;
     line-height: 1;
 
-    /* Animación de colores */
+    /* Animación de colores brillantes */
     background: linear-gradient(
         90deg,
         #ff1744,
@@ -254,12 +253,13 @@ body {
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: colorShift 6s ease infinite;
+    animation: logoColorShift 6s ease infinite;
 }
 
-@keyframes colorShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+/* Animación para el cambio de colores */
+@keyframes logoColorShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
