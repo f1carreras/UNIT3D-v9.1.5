@@ -229,7 +229,6 @@ body {
 }
 
 .auth-form__site-logo {
-    color: #a71641;
     font-weight: 900;
     font-size: 2.9rem;
     font-family:
@@ -240,6 +239,35 @@ body {
     text-transform: uppercase;
     letter-spacing: 0ch;
     line-height: 1;
+
+    /* Efecto de brillo y cambio de color */
+    background: linear-gradient(
+        -45deg,
+        #a71641,
+        #ff4d6d,
+        #ffcc00,
+        #a71641
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: logoColorShift 6s ease infinite;
+
+    /* Brillo extra */
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8),
+                 0 0 16px rgba(255, 0, 0, 0.6);
+}
+
+@keyframes logoColorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .auth-form__errors {
