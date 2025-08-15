@@ -96,14 +96,14 @@ body {
 .auth-form__primary-button {
     height: 48px;
     border-radius: 24px;
-    background-color: #2b1e48;
+    background-color: #f44336;
     border: none;
     width: 100%;
-    color: #eee;
+    color: #fff;
     font-weight: 800;
     font-size: 16px;
     text-transform: uppercase;
-    transition: background-color 0.2s;
+    transition: background-color .2s;
     margin-top: 24px;
 
     &:hover {
